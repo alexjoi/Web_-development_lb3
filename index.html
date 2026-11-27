@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Облік стажу співробітників</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <h1>Облік стажу співробітників</h1>
+        <p class="description">Введіть прізвища та дати прийому на роботу п'ятьох співробітників.</p>
+
+        <form id="employeeForm">
+            <div class="employee">
+                <h2>Співробітник 1</h2>
+                <label for="surname1">Прізвище:</label>
+                <input type="text" id="surname1" required>
+
+                <label for="date1">Дата прийому на роботу:</label>
+                <input type="date" id="date1" required>
+            </div>
+
+            <div class="employee">
+                <h2>Співробітник 2</h2>
+                <label for="surname2">Прізвище:</label>
+                <input type="text" id="surname2" required>
+
+                <label for="date2">Дата прийому на роботу:</label>
+                <input type="date" id="date2" required>
+            </div>
+
+            <div class="employee">
+                <h2>Співробітник 3</h2>
+                <label for="surname3">Прізвище:</label>
+                <input type="text" id="surname3" required>
+
+                <label for="date3">Дата прийому на роботу:</label>
+                <input type="date" id="date3" required>
+            </div>
+
+            <div class="employee">
+                <h2>Співробітник 4</h2>
+                <label for="surname4">Прізвище:</label>
+                <input type="text" id="surname4" required>
+
+                <label for="date4">Дата прийому на роботу:</label>
+                <input type="date" id="date4" required>
+            </div>
+
+            <div class="employee">
+                <h2>Співробітник 5</h2>
+                <label for="surname5">Прізвище:</label>
+                <input type="text" id="surname5" required>
+
+                <label for="date5">Дата прийому на роботу:</label>
+                <input type="date" id="date5" required>
+            </div>
+
+            <button type="submit">Розрахувати стаж</button>
+        </form>
+
+        <section id="result" class="result" hidden>
+            <h2>Результати розрахунку</h2>
+            <div id="employeeResults"></div>
+            <p id="averageResult"></p>
+        </section>
+
+        <button type="button" id="aboutButton">About</button>
+
+<div id="aboutWindow" class="about-window" hidden>
+    <div class="about-content">
+        <h2>Про автора</h2>
+        <p><strong>Студент:</strong> Коценко О.А.</p>
+        <p><strong>Група:</strong> КІУКІу-25-1</p>
+        <p><strong>Університет:</strong> ХНУРЕ</p>
+        <p><strong>Дисципліна:</strong> Веб-розробка</p>
+        <p><strong>Лабораторна робота:</strong> №3</p>
+        <p><strong>Варіант:</strong> 6</p>
+        <button type="button" id="closeAbout">Закрити</button>
+    </div>
+</div>
+    </main>
+</body>
+</html>
